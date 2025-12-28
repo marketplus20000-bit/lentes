@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Market Plus | Lentes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Encabezado */
+        header {
+            background: linear-gradient(90deg, #007bff, #00c6ff);
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #ffd500;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            color: #ffffff;
+            font-size: 16px;
+        }
+
+        /* Contenedor principal */
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 15px;
+        }
+
+        .titulo-seccion {
+            font-size: 26px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #007bff;
+        }
+
+        /* Grid de productos */
+        .productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .producto {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .producto:hover {
+            transform: translateY(-5px);
+        }
+
+        .producto img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            border-radius: 8px;
+            background-color: #fafafa;
+        }
+
+        .producto h3 {
+            font-size: 16px;
+            margin: 12px 0 5px;
+        }
+
+        .precio {
+            font-size: 18px;
+            font-weight: bold;
+            color: #28a745;
+            margin-bottom: 10px;
+        }
+
+        .btn-comprar {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .btn-comprar:hover {
+            background-color: #218838;
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Market Plus</h1>
+        <p>Ofertas en lentes y más</p>
+    </header>
+
+    <div class="container">
+        <h2 class="titulo-seccion">Lentes</h2>
+
+        <div class="productos">
+
+            <!-- Producto 1 -->
+            <div class="producto">
+                <img src="https://i.ibb.co/2YqDTZS2/image.png" alt="Lentes 1">
+                <h3>Lentes de Sol Modernos</h3>
+                <div class="precio">$200 MXN</div>
+                <a href="#" class="btn-comprar">Comprar</a>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="producto">
+                <img src="https://i.ibb.co/LdNVJzX2/Whats-App-Image-2025-12-28-at-1-11-24-PM.jpg" alt="Lentes 2">
+                <h3>Lentes Estilo Clásico</h3>
+                <div class="precio">$200 MXN</div>
+                <a href="#" class="btn-comprar">Comprar</a>
+            </div>
+
+            <!-- Puedes duplicar este bloque para más lentes -->
+
+        </div>
+    </div>
+
+    <footer>
+        © 2025 Market Plus · Todos los derechos reservados
+    </footer>
+
+</body>
+</html>
