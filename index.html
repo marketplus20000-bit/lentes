@@ -9,89 +9,118 @@
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-            background-color: #f5f5f5;
+            background-color: #f3f6f9;
             color: #333;
         }
 
-        /* Encabezado */
+        /* HEADER */
         header {
-            background: linear-gradient(90deg, #007bff, #00c6ff);
-            padding: 20px;
-            text-align: center;
+            background: #ffffff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
 
-        header h1 {
-            margin: 0;
-            color: #ffd500;
-            font-size: 32px;
+        .header-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 26px;
             font-weight: bold;
+            color: #146eb4;
         }
 
-        header p {
-            margin: 5px 0 0;
-            color: #ffffff;
-            font-size: 16px;
+        nav a {
+            margin-left: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 14px;
+            border-radius: 6px;
+            transition: background 0.2s;
         }
 
-        /* Contenedor principal */
+        .btn-inicio {
+            background-color: #ffd814;
+            color: #111;
+        }
+
+        .btn-inicio:hover {
+            background-color: #f7ca00;
+        }
+
+        .btn-contacto {
+            background-color: #146eb4;
+            color: #fff;
+        }
+
+        .btn-contacto:hover {
+            background-color: #0f5a96;
+        }
+
+        /* CONTENEDOR */
         .container {
             max-width: 1100px;
-            margin: 30px auto;
+            margin: 40px auto;
             padding: 0 15px;
         }
 
         .titulo-seccion {
-            font-size: 26px;
-            margin-bottom: 20px;
+            font-size: 28px;
             text-align: center;
-            color: #007bff;
+            margin-bottom: 25px;
+            color: #146eb4;
         }
 
-        /* Grid de productos */
+        /* GRID PRODUCTOS */
         .productos {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
+            gap: 22px;
         }
 
         .producto {
             background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
             padding: 15px;
             text-align: center;
-            transition: transform 0.2s;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
 
         .producto:hover {
             transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.12);
         }
 
         .producto img {
             width: 100%;
             height: 200px;
             object-fit: contain;
-            border-radius: 8px;
             background-color: #fafafa;
+            border-radius: 8px;
         }
 
         .producto h3 {
             font-size: 16px;
-            margin: 12px 0 5px;
+            margin: 12px 0 6px;
         }
 
         .precio {
             font-size: 18px;
             font-weight: bold;
             color: #28a745;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
 
         .btn-comprar {
             display: inline-block;
             background-color: #28a745;
-            color: white;
-            padding: 10px 15px;
+            color: #ffffff;
+            padding: 10px 18px;
             border-radius: 6px;
             text-decoration: none;
             font-size: 14px;
@@ -103,9 +132,10 @@
         }
 
         footer {
-            margin-top: 40px;
+            margin-top: 50px;
+            background-color: #ffffff;
             text-align: center;
-            padding: 15px;
+            padding: 18px;
             font-size: 14px;
             color: #777;
         }
@@ -113,17 +143,23 @@
 </head>
 <body>
 
+    <!-- HEADER -->
     <header>
-        <h1>Market Plus</h1>
-        <p>Ofertas en lentes y más</p>
+        <div class="header-container">
+            <div class="logo">Market Plus</div>
+            <nav>
+                <a href="#" class="btn-inicio">Inicio</a>
+                <a href="#" class="btn-contacto">Contacto</a>
+            </nav>
+        </div>
     </header>
 
+    <!-- CONTENIDO -->
     <div class="container">
         <h2 class="titulo-seccion">Lentes</h2>
 
         <div class="productos">
 
-            <!-- Producto 1 -->
             <div class="producto">
                 <img src="https://i.ibb.co/2YqDTZS2/image.png" alt="Lentes 1">
                 <h3>Lentes de Sol Modernos</h3>
@@ -131,7 +167,6 @@
                 <a href="#" class="btn-comprar">Comprar</a>
             </div>
 
-            <!-- Producto 2 -->
             <div class="producto">
                 <img src="https://i.ibb.co/LdNVJzX2/Whats-App-Image-2025-12-28-at-1-11-24-PM.jpg" alt="Lentes 2">
                 <h3>Lentes Estilo Clásico</h3>
@@ -139,11 +174,10 @@
                 <a href="#" class="btn-comprar">Comprar</a>
             </div>
 
-            <!-- Puedes duplicar este bloque para más lentes -->
-
         </div>
     </div>
 
+    <!-- FOOTER -->
     <footer>
         © 2025 Market Plus · Todos los derechos reservados
     </footer>
